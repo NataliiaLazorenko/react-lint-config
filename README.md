@@ -7,7 +7,6 @@ npm install --save-dev prettier husky lint-staged
 ```
 
 У VSCode додатково встановити плагіни: Prettier, Formatting Toggle та ESLint
-(щоб помилки підсвічувало відразу в коді)
 
 ## Інтеграція плагінів
 
@@ -34,10 +33,12 @@ npm install --save-dev prettier husky lint-staged
 }
 ```
 
-(Зайти у Settings, задати пошук Code Actions On Save і у результатах пошуку
+_Зайти у Settings, задати пошук Code Actions On Save і у результатах пошуку
 натиснути на посилання Edit in settings.json. У файлі, що відкриється, вкінці
-додати властивість (або замінити значення, якщо властивість вже існує):
+додати властивість (або замінити значення, якщо властивість вже існує)_:
 
+```json
 "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
+```
 
 [Репозиторій GoIT](https://github.com/goitacademy/react-lint-config)
