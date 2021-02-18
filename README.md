@@ -20,13 +20,11 @@ npm install --save-dev prettier husky lint-staged
 
 ## Налаштування VSCode
 
-Для комфортної роботи, після встановлення плагінів, потрібно додати декілька
-налаштувань редактора для автозберігання і форматування файлів.
+Для комфортної роботи, після встановлення плагінів, потрібно додати налаштування
+редактора для форматування файлів.
 
 ```json
 {
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
@@ -35,10 +33,7 @@ npm install --save-dev prettier husky lint-staged
 
 _Зайти у Settings, задати пошук Code Actions On Save і у результатах пошуку
 натиснути на посилання Edit in settings.json. У файлі, що відкриється, вкінці
-додати властивість (або замінити значення, якщо властивість вже існує)_:
-
-```json
-"editor.codeActionsOnSave": { "source.fixAll.eslint": true }
-```
+додати зазначену властивість (або замінити значення, якщо властивість вже
+існує)_:
 
 [Репозиторій GoIT](https://github.com/goitacademy/react-lint-config)
