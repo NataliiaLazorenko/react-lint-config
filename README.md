@@ -23,6 +23,11 @@ npm install --save-dev prettier husky lint-staged
 Для комфортної роботи, після встановлення плагінів, потрібно додати налаштування
 редактора для форматування файлів.
 
+Зайти у _Settings_, задати пошук _Code Actions On Save_ і у результатах пошуку
+натиснути на посилання _Edit in settings.json_. У файлі, що відкриється, вкінці
+додати зазначену властивість (або замінити значення, якщо властивість вже
+існує):
+
 ```json
 {
   "editor.codeActionsOnSave": {
@@ -30,10 +35,5 @@ npm install --save-dev prettier husky lint-staged
   }
 }
 ```
-
-_Зайти у Settings, задати пошук Code Actions On Save і у результатах пошуку
-натиснути на посилання Edit in settings.json. У файлі, що відкриється, вкінці
-додати зазначену властивість (або замінити значення, якщо властивість вже
-існує)_:
 
 [Репозиторій GoIT](https://github.com/goitacademy/react-lint-config)
